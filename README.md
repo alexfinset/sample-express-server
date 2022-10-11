@@ -19,9 +19,9 @@ async function getIncome() {
   console.log("data >>> ", data);
 }
 
-export function useGetMe<TData = any>(
+export function useGetIncome<TData = any>(
   options?: UseQueryOptions<any, AxiosError, TData>
 ) {
-  return useQuery("sample-income-api", getMe, options);
+  return useQuery("sample-income-api", getIncome, options);
 }
 ```
