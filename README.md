@@ -17,6 +17,7 @@ import { useQuery, UseQueryOptions } from "react-query";
 async function getIncome() {
   const { data } = await axios.get("http://localhost:3000/api/income");
   console.log("data >>> ", data);
+  return data;
 }
 
 export function useGetIncome<TData = any>(
